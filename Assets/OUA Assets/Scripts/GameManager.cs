@@ -44,7 +44,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        /*//bu alttaki dört satýr oyunun deneme aþamasýnda, deðiþkenleri her seferinde sýfýrlamak için yapýlmýþtýr. Buil alýnýrken silinecektir
+        //bu alttaki dört satýr oyunun deneme aþamasýnda, deðiþkenleri her seferinde sýfýrlamak için yapýlmýþtýr. Buil alýnýrken silinecektir
+        PlayerPrefs.SetInt("firstOpen", 0);
+ 
         SetInt("code", 1);
         SetInt("draw", 1);
         SetInt("pm", 1);
@@ -178,7 +180,7 @@ public class GameManager : MonoBehaviour
         endBtn.GetComponent<RectTransform>().DOScale(1, 0);
 
         endTxt.color = Color.green;
-        endTxt.text = "Tebrikler!\nBu günün görevlerini baþarýyla bitirdin";
+        endTxt.text = "Tebrikler!\nBu ay'ýn görevlerini baþarýyla bitirdin.";
 
         Invoke(nameof(ActiveBtn), 1);
         Invoke(nameof(GoEduScene), 2f);

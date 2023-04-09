@@ -12,8 +12,21 @@ public class StatueScripts : MonoBehaviour
     public TextMeshProUGUI codeStat;
     public TextMeshProUGUI drawStat, pmStat;
 
+    [Header("StartScene")]
+    public CanvasGroup startStory;
+
     private void Start()
     {
+        if (PlayerPrefs.GetInt("firstOpen") == 0)
+        {
+            PlayerPrefs.SetInt("firstOpen", 1);
+        }
+        else
+        {
+            startStory.GetComponent<RectTransform>().DOScale(0, 0);
+        }
+
+
         sc = this;
         PlayerStatSet();
     }
@@ -35,5 +48,11 @@ public class StatueScripts : MonoBehaviour
         codeStat.text = GameManager.GetInt("code", 1).ToString() + "   Yazýlým Gücü";
         drawStat.text = GameManager.GetInt("draw", 1).ToString() + "   Sanat Tasarýmý Gücü";
         pmStat.text = GameManager.GetInt("pm", 1).ToString() + "   Proje Yönetimi Gücü";
+    }
+
+    public void StartPanelClose()
+    {
+        startStory.DOFade(0, 1);
+        startStory.GetComponent<RectTransform>().DOScale(0, 0).SetDelay(1f);
     }
 }
