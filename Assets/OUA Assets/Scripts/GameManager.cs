@@ -42,6 +42,16 @@ public class GameManager : MonoBehaviour
     //Game Values
     int remainTour;                                  //geriye kalan tur sayýsý
 
+    public void ResetGameEX()
+    {
+        PlayerPrefs.SetInt("firstOpen", 0);
+
+        SetInt("code", 1);
+        SetInt("draw", 1);
+        SetInt("pm", 1);
+        SetInt("whichLevel", 0);
+
+    }
     void Start()
     {
         //bu alttaki dört satýr oyunun deneme aþamasýnda, deðiþkenleri her seferinde sýfýrlamak için yapýlmýþtýr. Buil alýnýrken silinecektir
