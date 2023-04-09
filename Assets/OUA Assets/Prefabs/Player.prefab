@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 68029772}
   - component: {fileID: 68029768}
   - component: {fileID: 68029773}
+  - component: {fileID: 7053163594627971205}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -163,3 +164,24 @@ MonoBehaviour:
   spawnSweetPrefab: {fileID: 4289768677116709068, guid: f3e1582d489b87940a95b38645b82266, type: 3}
   spawnBadPrefab: {fileID: 4344896758051326027, guid: 250a354ef1dd0144e913a0a17b6b0f61, type: 3}
   targetPuan: 10
+--- !u!95 &7053163594627971205
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7133385095717413193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5baaa0499827d64a88c0217acd6e8f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
