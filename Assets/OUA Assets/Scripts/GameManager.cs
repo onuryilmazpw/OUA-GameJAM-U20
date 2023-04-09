@@ -34,6 +34,11 @@ public class GameManager : MonoBehaviour
     public CanvasGroup endBtn;
     public TextMeshProUGUI endTxt;
 
+    [Header("Bad Chance")]
+    public CanvasGroup chancePanel;
+    public TextMeshProUGUI chanceTxt;
+    public int badChance;
+
     //Game Values
     int remainTour;                                  //geriye kalan tur sayýsý
 
@@ -47,6 +52,9 @@ public class GameManager : MonoBehaviour
 
         endBtn.DOFade(0, 0);
         endBtn.GetComponent<RectTransform>().DOScale(0, 0);
+
+        chancePanel.DOFade(0, 0);
+        chancePanel.GetComponent<RectTransform>().DOScale(0, 0);
 
         gm = this;
         gv = GetComponentInParent<GameValues>();
@@ -88,6 +96,13 @@ public class GameManager : MonoBehaviour
         remainTour--;
         remainTourTxt.text = " " + remainTour.ToString() + "   Kalan Tur Sayýsý";
 
+        int a = Random.Range(0, badChance);      //her turda %20 þans ile kötü durumlar oluþur
+        if (a == 0)
+        {
+            BadChance(whichBtn);
+            return;
+        }
+
         WorkValueStat(whichBtn);
 
         if (startCodeVal >= gv.levels[whichlevel].codeWorkVal && startDrawVal >= gv.levels[whichlevel].drawWorkVal && startPMVal >= gv.levels[whichlevel].pmWorkVal)
@@ -108,6 +123,8 @@ public class GameManager : MonoBehaviour
 
         endBtn.DOFade(0, 0).SetDelay(0.65f);
         endBtn.GetComponent<RectTransform>().DOScale(0, 0).SetDelay(0.65f);
+
+        BadPanelClose();
     }
     void ActiveBtn()
     {
@@ -139,12 +156,12 @@ public class GameManager : MonoBehaviour
         }
         else if (whichBtn == "draw" && startDrawVal < gv.levels[whichlevel].drawWorkVal)
         {
-            drawTxt.text = (GetInt("draw", 1) + startDrawVal).ToString() + "/" + gv.levels[whichlevel].drawWorkVal + "   Sanat Tasarýmý Gücü";
+            drawTxt.text = (GetInt("draw", 1) + startDrawVal).ToString() + "/" + gv.levels[whichlevel].drawWorkVal + "   Sanat Tasarýmý Ýþi";
             startDrawVal += GetInt("draw", 1);
         }
         else if (whichBtn == "pm" && startPMVal < gv.levels[whichlevel].pmWorkVal)
         {
-            pmTxt.text = (GetInt("pm", 1) + startPMVal).ToString() + "/" + gv.levels[whichlevel].pmWorkVal + "   Proje Yönetimi Gücü";
+            pmTxt.text = (GetInt("pm", 1) + startPMVal).ToString() + "/" + gv.levels[whichlevel].pmWorkVal + "   Proje Yönetimi Ýþi";
             startPMVal += GetInt("pm", 1);
         }
         else
@@ -165,6 +182,9 @@ public class GameManager : MonoBehaviour
 
         Invoke(nameof(ActiveBtn), 1);
         Invoke(nameof(GoEduScene), 2f);
+
+        chancePanel.DOFade(0, 0f);
+        chancePanel.GetComponent<RectTransform>().DOScale(0, 0);
     }
     void LoseScene()
     {
@@ -176,8 +196,127 @@ public class GameManager : MonoBehaviour
 
         Invoke(nameof(ActiveBtn), 1);
         Invoke(nameof(GoEduScene), 2f);
+
+        chancePanel.DOFade(0, 0f);
+        chancePanel.GetComponent<RectTransform>().DOScale(0, 0);
     }
 
+
+    void BadChance(string whichWork)
+    {
+        chancePanel.DOFade(1, 1);
+        chancePanel.GetComponent<RectTransform>().DOScale(1, 0);
+
+        chanceTxt.text = Olaylar(whichWork);
+    }
+    public void BadPanelClose()
+    {
+        chancePanel.DOFade(0, 0.5f);
+        chancePanel.GetComponent<RectTransform>().DOScale(0, 0).SetDelay(0.51f);
+
+        ActiveBtn();
+    }
+    string Olaylar(string whichWork)
+    {
+        if (whichWork == "code")     //kodlama bugu 
+        {
+            switch (Random.Range(0, 5))
+            {
+                case 0:
+                    startCodeVal -= 1;
+                    codeTxt.text = startCodeVal.ToString() + "/" + gv.levels[whichlevel].codeWorkVal + "   Yazýlým Ýþi";
+
+                    return "Küçük bir bug oluþtu. Bu seni yavaþlattý ama durdurmaya yetmez. \n- Yazýlým ilerlemen 1 azaldý.";
+
+                case 1:
+                    startCodeVal -= 2;
+                    codeTxt.text = startCodeVal.ToString() + "/" + gv.levels[whichlevel].codeWorkVal + "   Yazýlým Ýþi";
+
+                    return "Bir bugla karþýlaþtýn. Bunu çözmek oldukça vaktini harcadý.\n- Yazýlým ilerlemen 2 azaldý.";
+
+                case 2:
+                    //Ýlerleyemedin
+                    return "Ekranýn her yeri 'ERROR' yazýlarýyla doldu. Ne olduðu hakkýnda hiç bir fikrin yok.\n- Bu turda hiç bir ilerleme katedemediniz.";
+
+                case 3:
+                    remainTour--;
+                    remainTourTxt.text = " " + remainTour.ToString() + "   Kalan Tur Sayýsý";
+
+                    return "Takým arkadaþlarýn ile ayný anda ayný dosyayý düzeltmeye çalýþtýn. Olamaz bir Git Conflict hatasý aldýn. \n- Ýlerleme kat edemediniz. \n- Ayrýca tur hakkýnýzda 1 azaldý";
+
+                case 4:
+                    startCodeVal -= 3;
+                    codeTxt.text = startCodeVal.ToString() + "/" + gv.levels[whichlevel].codeWorkVal + "   Yazýlým Ýþi";
+
+                    return "Takým arkadaþýnla kavga ettin ve arkadaþýn kodlarýn bir kýsmýný sildi.\n- Bu tur boþa gittiði gibi Yazýlým ilerlemen 3 geriledi.";
+            }
+        }
+        else if (whichWork == "draw")    //çizim bugu çýkar
+        {
+            switch (Random.Range(0, 5))
+            {
+                case 0:
+                    startDrawVal -= 1;
+                    drawTxt.text = startDrawVal.ToString() + "/" + gv.levels[whichlevel].drawWorkVal + "   Sanat Tasarýmý Ýþi";
+
+                    return "Renkleri seçmekte kararsýz kaldýn ve doðru renkleri bulman oldukça vaktini harcadý. \n- Sanat tasarýmý ilerlemen 1 azaldý.";
+
+                case 1:
+                    startDrawVal -= 2;
+                    drawTxt.text = startDrawVal.ToString() + "/" + gv.levels[whichlevel].drawWorkVal + "   Sanat Tasarýmý Ýþi";
+
+                    return "Animasyonda kaydýrma yapmýþsýn. Bu seni yavaþlattý ama durdurmaya yetmez. \n- Sanat tasarýmý ilerlemen 2 azaldý.";
+
+                case 2:
+                    remainTour--;
+                    remainTourTxt.text = " " + remainTour.ToString() + "   Kalan Tur Sayýsý";
+                    return "Çizimin bitmek üzereyken bu korkunç þeyi çizdiðine üzüldün ve çizime baþtan baþladýn.\n - Ýlerleme kat edemediniz. \n- Ayrýca tur hakkýnýzda 1 azaldý";
+
+                case 3:
+                    startDrawVal -= 3;
+                    drawTxt.text = startDrawVal.ToString() + "/" + gv.levels[whichlevel].drawWorkVal + "   Sanat Tasarýmý Ýþi";
+                    return "Takým arkadaþlarýn tasarýmýný beðenmedi. Bu tasarýmý oyuna eklemekten vazgeçtiniz. \n- Sanat tasarýmý ilerlemen 3 azaldý.";
+
+                case 4:
+                    remainTour -= 2;
+                    remainTourTxt.text = " " + remainTour.ToString() + "   Kalan Tur Sayýsý";
+                    return "Takým arkadaþlarýnla oyun temasýný deðiþtirme kararý aldýnýz.\n- Tur hakkýnýzda 2 azaldý";
+            }
+        }
+        else if (whichWork == "pm")    //proje yönetimi bugu çýkar
+        {
+            switch (Random.Range(0, 5))
+            {
+                case 0:
+                    startPMVal -= 1;
+                    pmTxt.text = startPMVal.ToString() + "/" + gv.levels[whichlevel].pmWorkVal + "   Proje Yönetimi Ýþi";
+
+                    return "Notlarýn birbirine girmiþ. Bu seni yavaþlattý ama durdurmaya yetmez.\n- Proje Yönetim ilerlemen 1 azaldý.";
+
+                case 1:
+                    startPMVal -= 2;
+                    pmTxt.text = startPMVal.ToString() + "/" + gv.levels[whichlevel].pmWorkVal + "   Proje Yönetimi Ýþi";
+
+                    return "Bugün telefonun hiç susmadý. Görüþmeler oldukça vaktini harcadý.\n- Proje Yönetim ilerlemen 2 azaldý.";
+
+                case 2:
+                    return "Mail listelerini karýþtýrdýn. Herkese düzeltme maili göndermek zorunda kaldýn.\n- Bu turda hiç bir ilerleme katedemediniz.";
+
+                case 3:
+                    remainTour -= 2;
+                    remainTourTxt.text = " " + remainTour.ToString() + "   Kalan Tur Sayýsý";
+
+                    return "Projenin kilit elemaný hastalandý. Ýyileþmesini beklemekten baþka çaren yok.\n- Tur hakkýnýzda 2 azaldý";
+
+                case 4:
+                    startPMVal -= 3;
+                    pmTxt.text = startPMVal.ToString() + "/" + gv.levels[whichlevel].pmWorkVal + "   Proje Yönetimi Ýþi";
+
+                    return "Proje çalýþanlarýndan birisi ayrýldý. Olamaz giderken yaptýðý iþlerin bir kýsmýný götürmüþ.\n- Proje Yönetim ilerlemen 3 azaldý.";
+            }
+        }
+        return "Korkma hiç birþe olmadý";
+    }
 
     public static void SetInt(string a, int value)
     {

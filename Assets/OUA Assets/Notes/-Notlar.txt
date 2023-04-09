@@ -7,23 +7,23 @@ Ama maalesef her şey planladığı gibi ilerlemiyecek.
 
 Kodlama talihsizlikleri
 +   Küçük bir bug oluştu. Bu seni yavaşlattı ama durdurmaya yetmez. 
-    Yazılım Gücün 1 düştü.
+    Yazılım ilerlemen 1 azaldı.
 +   Bir bugla karşılaştın. Bunu çözmek oldukça vaktini harcadı.
-    Yazılım Gücün 2 düştü.
+    Yazılım ilerlemen 2 azaldı.
 +   Ekranın her yeri "ERROR" yazılarıyla doldu. Ne olduğu hakkında hiç bir fikrin yok.
-    Yazılım gücün yarılandı.
+
 +   Takım arkadaşların ile aynı anda aynı dosyayı düzeltmeye çalıştın.
     Olamaz bir Git Conflict hatası aldın. Bu tur boşa gitti.
-+   Takım arkadaşınla kavga ettin ve arkadaşın kodların bir kısmını sildi.
++   Takım arkadaşınla kavga ettin ve arkadaşın kodların bir kısmını sildi.                      //bu baya güzel olmuş :)
     Bu tur boşa gittiği gibi Yazılım ilerlemen 1 geriledi.
 
 Sanat talihsizlikleri
-+   Ufak bir yerde kaydırma yapmışsın. Bu seni yavaşlattı ama durdurmaya yetmez.
-    Sanat Tasarımı gücün 1 düştü.
++   Animasyonda kaydırma yapmışsın. Bu seni yavaşlattı ama durdurmaya yetmez.
+    Sanat Tasarımı ilerlemen 1 azaldı.
 +   Renkleri seçmekte kararsız kaldın ve doğru renkleri bulman oldukça vaktini harcadı.
-    Sanat Tasarımı gücün 2 düştü.
+    Sanat Tasarımı ilerlemen 2 azaldı.
 +   Çizimin bitmek üzereyken bu korkunç şeyi çizdiğine üzüldün ve çizime baştan başladın.
-    Sanat Tasarımı gücün yarılandı.
+
 +   Takım arkadaşların tasarımını beğenmedi. Bu tasarımı oyuna eklemekten vazgeçtiniz.
     Bu tur boşa gitti.
 +   Takım arkadaşlarınla oyun temasını değiştirme kararı aldınız.
@@ -31,11 +31,11 @@ Sanat talihsizlikleri
 
 Proje Yönetimi talihsizlikleri
 +   Notların birbirine girmiş. Bu seni yavaşlattı ama durdurmaya yetmez.
-    Proje Yönetim gücün 1 düştü.
+    Proje Yönetim ilerlemen 1 azaldı.
 +   Bugün telefonun hiç susmadı. Görüşmeler oldukça vaktini harcadı.
-    Proje Yönetim gücün 2 düştü.
+    Proje Yönetim ilerlemen 2 azaldı.
 +   Mail listelerini karıştırdın. Herkese düzeltme maili göndermek zorunda kaldın.
-    Proje Yönetim gücün yarılandı.
+
 +   Projenin kilit elemanı hastalandı. İyileşmesini beklemekten başka çaren yok.
     Bu tur boşa gitti.
 +   Proje çalışanlarından birisi ayrıldı. Olamaz giderken yaptığı işlerin bir kısmını götürmüş.
