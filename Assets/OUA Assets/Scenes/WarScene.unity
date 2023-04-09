@@ -4113,7 +4113,6 @@ GameObject:
   - component: {fileID: 1258394797}
   - component: {fileID: 1258394796}
   - component: {fileID: 1258394798}
-  - component: {fileID: 1258394799}
   m_Layer: 5
   m_Name: Player
   m_TagString: Untagged
@@ -4194,22 +4193,6 @@ MonoBehaviour:
   player: {fileID: 1258394796}
   img1: {fileID: -1798670476, guid: 49b34fc8cf977104793a76c0f7307ee0, type: 3}
   img2: {fileID: -1305748275, guid: 49b34fc8cf977104793a76c0f7307ee0, type: 3}
-  canAtk: 0
---- !u!111 &1258394799
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258394794}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: ebf098934bb8c7a4b8e6cfdef67a2cd7, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1291180378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4302,7 +4285,6 @@ MonoBehaviour:
   player: {fileID: 1291180380}
   img1: {fileID: -1798670476, guid: 49b34fc8cf977104793a76c0f7307ee0, type: 3}
   img2: {fileID: -1305748275, guid: 49b34fc8cf977104793a76c0f7307ee0, type: 3}
-  canAtk: 0
 --- !u!1 &1324147880
 GameObject:
   m_ObjectHideFlags: 0
@@ -5804,18 +5786,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: pm
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1258394798}
-        m_TargetAssemblyTypeName: PlayrAnim, Assembly-CSharp
-        m_MethodName: Atk
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1841778130
