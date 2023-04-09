@@ -89,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4344896758051326027, guid: 250a354ef1dd0144e913a0a17b6b0f61, type: 3}
       propertyPath: m_Name
-      value: BadSkull
+      value: BadSkull Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 250a354ef1dd0144e913a0a17b6b0f61, type: 3}
