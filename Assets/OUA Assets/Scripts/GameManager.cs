@@ -39,23 +39,23 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        //bu alttaki dört satýr oyunun deneme aþamasýnda, deðiþkenleri her seferinde sýfýrlamak için yapýlmýþtýr. Buil alýnýrken silinecektir
+        /*//bu alttaki dört satýr oyunun deneme aþamasýnda, deðiþkenleri her seferinde sýfýrlamak için yapýlmýþtýr. Buil alýnýrken silinecektir
         SetInt("code", 1);
         SetInt("draw", 1);
         SetInt("pm", 1);
-        SetInt("whichLevel", 0);            //0. level aslýnda 1. level oluyor (Levellerde dizi mantýðý var)
+        SetInt("whichLevel", 0);            //0. level aslýnda 1. level oluyor (Levellerde dizi mantýðý var)*/
 
         endBtn.DOFade(0, 0);
         endBtn.GetComponent<RectTransform>().DOScale(0, 0);
 
         gm = this;
         gv = GetComponentInParent<GameValues>();
-        ResetLevel();
 
         playerPos = player.position;
 
         remainTourTxt.text = remainTour.ToString() + "  Kalan Tur Sayýsý";
 
+        ResetLevel();
         PlayerStatSet();
     }
     public void ResetLevel()
@@ -64,9 +64,15 @@ public class GameManager : MonoBehaviour
         whichLevelTxt.text = (whichlevel + 1).ToString() + ". Seviye";
 
         remainTour = gv.levels[whichlevel].remainTourVal;
+        remainTourTxt.text = remainTour.ToString() + "  Kalan Tur Sayýsý";
+
         startCodeVal = 0;
         startDrawVal = 0;
         startPMVal = 0;
+
+        codeTxt.text = startCodeVal.ToString() + "/" + gv.levels[whichlevel].codeWorkVal + "   Yazýlým Ýþi";
+        drawTxt.text = startDrawVal.ToString() + "/" + gv.levels[whichlevel].drawWorkVal + "   Sanat Tasarýmý Ýþi";
+        pmTxt.text = startPMVal.ToString() + "/" + gv.levels[whichlevel].pmWorkVal + "   Proje Yönetimi Ýþi";
     }
 
     public void BasicBtnFunc(string whichBtn)
@@ -84,7 +90,7 @@ public class GameManager : MonoBehaviour
 
         WorkValueStat(whichBtn);
 
-        if (startCodeVal == gv.levels[whichlevel].codeWorkVal && startDrawVal == gv.levels[whichlevel].drawWorkVal && startPMVal == gv.levels[whichlevel].pmWorkVal)
+        if (startCodeVal >= gv.levels[whichlevel].codeWorkVal && startDrawVal >= gv.levels[whichlevel].drawWorkVal && startPMVal >= gv.levels[whichlevel].pmWorkVal)
         {
             WinScene();
         }
@@ -97,8 +103,6 @@ public class GameManager : MonoBehaviour
     }
     public void GoEduScene()
     {
-        StatueScripts.sc.PlayerStatSet();
-
         statueScene.DOBlendableLocalMoveBy(new(0, 1080), 0.6f);
         workScene.DOBlendableLocalMoveBy(new(0, 1080), 0.6f);
 

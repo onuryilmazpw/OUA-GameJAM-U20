@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OUA Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/OUA Assets/Scenes/WarScene.unity
+    guid: dd864392ae5e63e4ea9856bad808bbd7
+  - enabled: 1
+    path: Assets/OUA Assets/Scenes/pm.unity
+    guid: f9bb1a8a5ae3a09489ab046b58029ca2
+  - enabled: 1
+    path: Assets/OUA Assets/Scenes/draw.unity
+    guid: 137e3111e28272a4c9242a1c70f58115
+  - enabled: 1
+    path: Assets/OUA Assets/Scenes/code.unity
+    guid: 80687778ae4bee748ba60b87676d4fc0
   m_configObjects: {}

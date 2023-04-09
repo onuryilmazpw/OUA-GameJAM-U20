@@ -15,22 +15,21 @@ public class StatueScripts : MonoBehaviour
     private void Start()
     {
         sc = this;
+        PlayerStatSet();
     }
 
     public void GoEducationLevel(string levelName)
     {
-        //SceneManager.LoadScene(levelName);
-        GameManager.SetInt(levelName, GameManager.GetInt("code", 1) + 1);
+        SceneManager.LoadScene(levelName);
     }
     public void GoWorkScene()
     {
-        GameManager.gm.PlayerStatSet();
         GameManager.gm.ResetLevel();
+        GameManager.gm.PlayerStatSet();
 
         statueScene.DOBlendableLocalMoveBy(new(0, -1080), 0.6f);
         workScene.DOBlendableLocalMoveBy(new(0, -1080), 0.6f);
     }
-
     public void PlayerStatSet()
     {
         codeStat.text = GameManager.GetInt("code", 1).ToString() + "   Yazýlým Gücü";

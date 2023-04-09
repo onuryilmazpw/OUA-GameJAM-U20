@@ -133,7 +133,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
 --- !u!114 &68029768
 MonoBehaviour:
@@ -160,6 +160,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff9ca8fafca4c94e884b4bbf0268c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puanYazi: {fileID: 0}
   spawnSweetPrefab: {fileID: 4289768677116709068, guid: f3e1582d489b87940a95b38645b82266, type: 3}
   spawnBadPrefab: {fileID: 4344896758051326027, guid: 250a354ef1dd0144e913a0a17b6b0f61, type: 3}
+  targetPuan: 10

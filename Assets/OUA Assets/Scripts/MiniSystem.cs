@@ -1,17 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
 public class MiniSystem : MonoBehaviour
 {
-    public TextMeshProUGUI puanYazi;
+    TextMeshProUGUI puanYazi;
 
     public GameObject spawnSweetPrefab;
     public GameObject spawnBadPrefab;
 
+    public int targetPuan;
     private int puan = 0;
+
+    private void Start()
+    {
+        puanYazi = GameObject.Find("Puan").GetComponent<TextMeshProUGUI>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -20,8 +24,8 @@ public class MiniSystem : MonoBehaviour
             Destroy(other.gameObject);
             puan++;
             SpawnSweet();
-            puanYazi.text = "Puan : " + puan + "/20";
-            if(puan == 20)
+            puanYazi.text = "Puan : " + puan + "/" + targetPuan.ToString();
+            if(puan >= targetPuan)
             {
                 WinScene();
             }
@@ -29,13 +33,13 @@ public class MiniSystem : MonoBehaviour
         else if (other.CompareTag("-2puan"))
         {
             Destroy(other.gameObject);
-            puan = puan - 2;
+            puan -= 2;
             if(puan < 0)
             {
                 puan = 0;
             }
             SpawnBad();
-            puanYazi.text = "Puan: " + puan + "/20";
+            puanYazi.text = "Puan: " + puan + "/" + targetPuan.ToString();
         }
     }
 
@@ -52,7 +56,8 @@ public class MiniSystem : MonoBehaviour
 
     private void WinScene()
     {
-        SceneManager.LoadScene("StateScene");
+        GameManager.SetInt(SceneManager.GetActiveScene().name, GameManager.GetInt(SceneManager.GetActiveScene().name, 1) + 1);
+        SceneManager.LoadScene("WarScene");
     }
 
 }
