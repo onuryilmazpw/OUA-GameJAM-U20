@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -6,11 +8,12 @@ public class MiniSystem : MonoBehaviour
 {
     TextMeshProUGUI puanYazi;
 
-    public GameObject spawnSweetPrefab;
+    public List<GameObject> spawnSweetPrefab;
     public GameObject spawnBadPrefab;
-
     public int targetPuan;
+
     private int puan = 0;
+    private int sweetIndex = 0;
 
     private void Start()
     {
@@ -46,7 +49,8 @@ public class MiniSystem : MonoBehaviour
     private void SpawnSweet()
     {
         Vector2 spawnPosition = new Vector2(Random.Range(-8.00f, 7.80f), Random.Range(-4.25f, 3.75f));
-        Instantiate(spawnSweetPrefab, spawnPosition, Quaternion.identity);
+        sweetIndex = Random.Range(0, spawnSweetPrefab.Count);
+        Instantiate(spawnSweetPrefab[sweetIndex], spawnPosition, Quaternion.identity);
     }
     private void SpawnBad()
     {
