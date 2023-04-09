@@ -6,13 +6,20 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager gm;
+
     public Transform player;
     public Button CodeBtn, DrawBtn, PMBtn;
     public TextMeshProUGUI whichLevelTxt;
 
     Vector2 playerPos;
-    GameValues gv;
+    [HideInInspector] public GameValues gv;
     int whichlevel, startCodeVal, startDrawVal, startPMVal;                       //bu kýsým her level baþýnda tekrar ayarlanacak
+
+    [Header("Scenes")]
+    public Transform workScene;
+    public Transform statueScene;
+
 
     [Header("WorkTable Texts")]
     public TextMeshProUGUI remainTourTxt;
@@ -23,11 +30,25 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI drawStat, pmStat;
 
 
-    [Header("Game Values")]
+    [Header("Scene End Pop-Up")]
+    public CanvasGroup endBtn;
+    public TextMeshProUGUI endTxt;
+
+    //Game Values
     int remainTour;                                  //geriye kalan tur sayýsý
 
     void Start()
     {
+        //bu alttaki dört satýr oyunun deneme aþamasýnda, deðiþkenleri her seferinde sýfýrlamak için yapýlmýþtýr. Buil alýnýrken silinecektir
+        SetInt("code", 1);
+        SetInt("draw", 1);
+        SetInt("pm", 1);
+        SetInt("whichLevel", 0);            //0. level aslýnda 1. level oluyor (Levellerde dizi mantýðý var)
+
+        endBtn.DOFade(0, 0);
+        endBtn.GetComponent<RectTransform>().DOScale(0, 0);
+
+        gm = this;
         gv = GetComponentInParent<GameValues>();
         ResetLevel();
 
@@ -37,10 +58,10 @@ public class GameManager : MonoBehaviour
 
         PlayerStatSet();
     }
-    void ResetLevel()
+    public void ResetLevel()
     {
         whichlevel = GetInt("whichLevel", 0);
-        whichLevelTxt.text = whichlevel.ToString();
+        whichLevelTxt.text = (whichlevel + 1).ToString() + ". Seviye";
 
         remainTour = gv.levels[whichlevel].remainTourVal;
         startCodeVal = 0;
@@ -74,6 +95,16 @@ public class GameManager : MonoBehaviour
 
         Invoke(nameof(ActiveBtn), 1);
     }
+    public void GoEduScene()
+    {
+        StatueScripts.sc.PlayerStatSet();
+
+        statueScene.DOBlendableLocalMoveBy(new(0, 1080), 0.6f);
+        workScene.DOBlendableLocalMoveBy(new(0, 1080), 0.6f);
+
+        endBtn.DOFade(0, 0).SetDelay(0.65f);
+        endBtn.GetComponent<RectTransform>().DOScale(0, 0).SetDelay(0.65f);
+    }
     void ActiveBtn()
     {
         if (remainTour > 0)
@@ -84,7 +115,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void PlayerStatSet()
+    public void PlayerStatSet()
     {
         codeStat.text = GetInt("code", 1).ToString() + "   Yazýlým Gücü";
         drawStat.text = GetInt("draw", 1).ToString() + "   Sanat Tasarýmý Gücü";
@@ -121,11 +152,26 @@ public class GameManager : MonoBehaviour
     void WinScene()
     {
         SetInt("whichLevel", GetInt("whichLevel", 0) + 1);
-        SceneManager.LoadScene("StateScene");
+
+        endBtn.DOFade(1, 1);
+        endBtn.GetComponent<RectTransform>().DOScale(1, 0);
+
+        endTxt.color = Color.green;
+        endTxt.text = "Tebrikler!\nBu günün görevlerini baþarýyla bitirdin";
+
+        Invoke(nameof(ActiveBtn), 1);
+        Invoke(nameof(GoEduScene), 2f);
     }
     void LoseScene()
     {
-        SceneManager.LoadScene("StateScene");
+        endBtn.DOFade(1, 1);
+        endBtn.GetComponent<RectTransform>().DOScale(1, 0);
+
+        endTxt.color = Color.red;
+        endTxt.text = "Kaybettin!\nYeteneklerini yükselt ve tekrar dene";
+
+        Invoke(nameof(ActiveBtn), 1);
+        Invoke(nameof(GoEduScene), 2f);
     }
 
 
