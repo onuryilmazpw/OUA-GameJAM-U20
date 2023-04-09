@@ -1,0 +1,42 @@
+Hikaye
+Karakterimiz oyun geliştirme istiyor ama nereden başlayacağını bilmiyor.
+Karşısına Google Oyun ve Uygulama Akademisi Çıkar
+Başvurusunu yapar ve OUA macerası başlar.
+Görevleri yerine getimek için sıkı çalışır ve planlar yapar.
+Ama maalesef her şey planladığı gibi ilerlemiyecek.
+
+Kodlama talihsizlikleri
++   Küçük bir bug oluştu. Bu seni yavaşlattı ama durdurmaya yetmez. 
+    Yazılım Gücün 1 düştü.
++   Bir bugla karşılaştın. Bunu çözmek oldukça vaktini harcadı.
+    Yazılım Gücün 2 düştü.
++   Ekranın her yeri "ERROR" yazılarıyla doldu. Ne olduğu hakkında hiç bir fikrin yok.
+    Yazılım gücün yarılandı.
++   Takım arkadaşların ile aynı anda aynı dosyayı düzeltmeye çalıştın.
+    Olamaz bir Git Conflict hatası aldın. Bu tur boşa gitti.
++   Takım arkadaşınla kavga ettin ve arkadaşın kodların bir kısmını sildi.
+    Bu tur boşa gittiği gibi Yazılım ilerlemen 1 geriledi.
+
+Sanat talihsizlikleri
++   Ufak bir yerde kaydırma yapmışsın. Bu seni yavaşlattı ama durdurmaya yetmez.
+    Sanat Tasarımı gücün 1 düştü.
++   Renkleri seçmekte kararsız kaldın ve doğru renkleri bulman oldukça vaktini harcadı.
+    Sanat Tasarımı gücün 2 düştü.
++   Çizimin bitmek üzereyken bu korkunç şeyi çizdiğine üzüldün ve çizime baştan başladın.
+    Sanat Tasarımı gücün yarılandı.
++   Takım arkadaşların tasarımını beğenmedi. Bu tasarımı oyuna eklemekten vazgeçtiniz.
+    Bu tur boşa gitti.
++   Takım arkadaşlarınla oyun temasını değiştirme kararı aldınız.
+    Bu tur boşa gittiği gibi Sanat tasarımı ilerlemen 1 geriledi.
+
+Proje Yönetimi talihsizlikleri
++   Notların birbirine girmiş. Bu seni yavaşlattı ama durdurmaya yetmez.
+    Proje Yönetim gücün 1 düştü.
++   Bugün telefonun hiç susmadı. Görüşmeler oldukça vaktini harcadı.
+    Proje Yönetim gücün 2 düştü.
++   Mail listelerini karıştırdın. Herkese düzeltme maili göndermek zorunda kaldın.
+    Proje Yönetim gücün yarılandı.
++   Projenin kilit elemanı hastalandı. İyileşmesini beklemekten başka çaren yok.
+    Bu tur boşa gitti.
++   Proje çalışanlarından birisi ayrıldı. Olamaz giderken yaptığı işlerin bir kısmını götürmüş.
+    Bu tur boşa gittiği gibi Proje Yönetim ilerlemen 1 geriledi.
