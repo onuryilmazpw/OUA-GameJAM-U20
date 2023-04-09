@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2747365354209847716}
   - component: {fileID: 1959469856447265722}
   - component: {fileID: 1040226359794101207}
+  - component: {fileID: 1912053470}
   m_Layer: 0
   m_Name: Bad
   m_TagString: -2puan
@@ -123,3 +124,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1912053470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4344896758051326027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe74702b84ec7374386ed5516a4443af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hiz: 5
+  waypoints: []
