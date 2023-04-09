@@ -15,6 +15,7 @@ public class StatueScripts : MonoBehaviour
     [Header("StartScene")]
     public CanvasGroup startStory;
 
+
     private void Start()
     {
         if (PlayerPrefs.GetInt("firstOpen") == 0)
@@ -33,10 +34,15 @@ public class StatueScripts : MonoBehaviour
 
     public void GoEducationLevel(string levelName)
     {
+        AudioManager.instance.PlaySound("NormalBtn");
         SceneManager.LoadScene(levelName);
     }
     public void GoWorkScene()
     {
+        AudioManager.instance.PlaySound("NormalBtn");
+        AudioManager.instance.PlaySound("Fight");
+        AudioManager.instance.StopSound("Education");
+
         GameManager.gm.ResetLevel();
         GameManager.gm.PlayerStatSet();
 
@@ -52,6 +58,8 @@ public class StatueScripts : MonoBehaviour
 
     public void StartPanelClose()
     {
+        AudioManager.instance.PlaySound("NormalBtn");
+
         startStory.DOFade(0, 1);
         startStory.GetComponent<RectTransform>().DOScale(0, 0).SetDelay(1f);
     }

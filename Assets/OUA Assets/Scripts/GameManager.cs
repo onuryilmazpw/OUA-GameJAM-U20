@@ -1,7 +1,6 @@
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -97,6 +96,11 @@ public class GameManager : MonoBehaviour
 
     public void BasicBtnFunc(string whichBtn)
     {
+        if (Random.Range(0,2) == 0)
+            AudioManager.instance.PlaySound("AtkBtn1");
+        else
+            AudioManager.instance.PlaySound("AtkBtn2");
+
         player.DOBlendablePunchRotation(new(1, 1, 5), 1, 20, 1);        //sondaki 10 ve 1 deðerleri defaault deðerler
         player.DOBlendableMoveBy(new(-120, 0), 0.06f);
         player.DOBlendableMoveBy(new(120, 0), 0.2f).SetDelay(0.3f);
@@ -130,6 +134,10 @@ public class GameManager : MonoBehaviour
     }
     public void GoEduScene()
     {
+        AudioManager.instance.PlaySound("NormalBtn");
+        AudioManager.instance.StopSound("Fight");
+        AudioManager.instance.PlaySound("Education");
+
         statueScene.DOBlendableLocalMoveBy(new(0, 1080), 0.6f);
         workScene.DOBlendableLocalMoveBy(new(0, 1080), 0.6f);
 
@@ -184,6 +192,8 @@ public class GameManager : MonoBehaviour
 
     void WinScene()
     {
+        AudioManager.instance.PlaySound("WinGame");
+
         SetInt("whichLevel", GetInt("whichLevel", 0) + 1);
 
         endBtn.DOFade(1, 1);
@@ -200,6 +210,8 @@ public class GameManager : MonoBehaviour
     }
     void LoseScene()
     {
+        AudioManager.instance.PlaySound("LoseGame");
+
         endBtn.DOFade(1, 1);
         endBtn.GetComponent<RectTransform>().DOScale(1, 0);
 
@@ -216,6 +228,8 @@ public class GameManager : MonoBehaviour
 
     void BadChance(string whichWork)
     {
+        AudioManager.instance.PlaySound("BadThings");
+
         chancePanel.DOFade(1, 1);
         chancePanel.GetComponent<RectTransform>().DOScale(1, 0);
 
