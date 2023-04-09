@@ -19,7 +19,7 @@ public class AudioManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
 
-        currentVolume = PlayerPrefs.GetFloat("globalVolume");
+        currentVolume = PlayerPrefs.GetFloat("globalVolume", 1);
 
         foreach (Sound s in sounds)
         {

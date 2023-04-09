@@ -3271,7 +3271,7 @@ MonoBehaviour:
   endTxt: {fileID: 196043762}
   chancePanel: {fileID: 1442786497}
   chanceTxt: {fileID: 1132933399}
-  badChance: 5
+  badChance: 6
 --- !u!1 &945301871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,6 +3349,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945301871}
   m_CullTransparentMesh: 1
+--- !u!1 &1019911051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1019911053}
+  - component: {fileID: 1019911052}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1019911052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019911051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845674412bd54a745a9b7d9644fa96b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: AtkBtn1
+    clip: {fileID: 8300000, guid: 46397d52d53c1994a8e96aa949fed177, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AtkBtn2
+    clip: {fileID: 8300000, guid: dd799892128a3f74c856ec201bbd434f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: NormalBtn
+    clip: {fileID: 8300000, guid: d88f13a3c0a38f84b9ee97e88abf06ff, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WinGame
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LoseGame
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BadThings
+    clip: {fileID: 8300000, guid: c4c36d3a94531b8438fc28a8471112df, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fight
+    clip: {fileID: 8300000, guid: 8607be6a44ca64643a16cfe7112cd9df, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Education
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  currentVolume: 0
+--- !u!4 &1019911053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019911051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1180.5713, y: 976.95215, z: -13.94556}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1049121033
 GameObject:
   m_ObjectHideFlags: 0
@@ -5491,7 +5585,6 @@ GameObject:
   - component: {fileID: 1633972103}
   - component: {fileID: 1633972102}
   - component: {fileID: 1633972106}
-  - component: {fileID: 1633972107}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5617,68 +5710,6 @@ MonoBehaviour:
     codeWorkVal: 6
     drawWorkVal: 3
     pmWorkVal: 5
---- !u!114 &1633972107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633972101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845674412bd54a745a9b7d9644fa96b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: AtkBtn1
-    clip: {fileID: 8300000, guid: 46397d52d53c1994a8e96aa949fed177, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: AtkBtn2
-    clip: {fileID: 8300000, guid: dd799892128a3f74c856ec201bbd434f, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: NormalBtn
-    clip: {fileID: 8300000, guid: d88f13a3c0a38f84b9ee97e88abf06ff, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: WinGame
-    clip: {fileID: 0}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: LoseGame
-    clip: {fileID: 0}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: BadThings
-    clip: {fileID: 8300000, guid: c4c36d3a94531b8438fc28a8471112df, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Fight
-    clip: {fileID: 8300000, guid: 8607be6a44ca64643a16cfe7112cd9df, type: 3}
-    volume: 0.3
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: Education
-    clip: {fileID: 0}
-    volume: 1
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  currentVolume: 0
 --- !u!1 &1636927594
 GameObject:
   m_ObjectHideFlags: 0
