@@ -4096,7 +4096,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.793579, y: -220.2843}
+  m_AnchoredPosition: {x: 15.793579, y: -338}
   m_SizeDelta: {x: -1650.7605, y: -1124.0435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188628799
@@ -5209,11 +5209,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bu hikaye oyun geli\u015Ftirmek isteyip nas\u0131l yapaca\u011F\u0131n\u0131
-    bilmeyen birisinin Oyun ve Uygulama Akademisi ile tan\u0131\u015Fmas\u0131ndan
-    sonra e\u011Fitimleri tamamlamaya \xE7al\u0131\u015F\u0131rken plans\u0131z bir
-    \u015Fekilde kar\u015F\u0131s\u0131na \xE7\u0131kan zorluklar ile bo\u011Fu\u015Fmas\u0131n\u0131
-    anlat\u0131yor."
+  m_text: "Akademi Fighter\nMarcus'un hayali kendi oyununu yapmakt\u0131. Nas\u0131l
+    yap\u0131laca\u011F\u0131n\u0131 bilmiyordu.  Sonra Oyun ve Uygulama Akademisi
+    ile tan\u0131\u015Ft\u0131. Akademide e\u011Fitimler al\u0131p g\xF6revleri yerine
+    getirerek bu hayaline kavu\u015Fmaya \xE7al\u0131\u015Facak.\n(Ama \xE7\u0131kabilecek
+    aksilikleri d\xFC\u015F\xFCnmedi...)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}

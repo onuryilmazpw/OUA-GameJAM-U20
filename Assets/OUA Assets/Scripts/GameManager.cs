@@ -2,6 +2,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -136,6 +137,10 @@ public class GameManager : MonoBehaviour
     }
     public void GoEduScene()
     {
+        if (whichlevel >= 4)
+        {
+            SceneManager.LoadScene("End");
+        }
         AudioManager.instance.PlaySound("NormalBtn");
         AudioManager.instance.StopSound("Fight");
         AudioManager.instance.PlaySound("Education");
@@ -197,7 +202,7 @@ public class GameManager : MonoBehaviour
         AudioManager.instance.PlaySound("WinGame");
 
         SetInt("whichLevel", GetInt("whichLevel", 0) + 1);
-
+        
         endBtn.DOFade(1, 1);
         endBtn.GetComponent<RectTransform>().DOScale(1, 0);
 
