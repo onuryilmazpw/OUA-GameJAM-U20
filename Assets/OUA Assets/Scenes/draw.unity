@@ -8478,6 +8478,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 68029773, guid: 2c04d509d5b66fd45a0abf9cc3a3f316, type: 3}
+      propertyPath: artiPuan
+      value: 
+      objectReference: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
+    - target: {fileID: 68029773, guid: 2c04d509d5b66fd45a0abf9cc3a3f316, type: 3}
+      propertyPath: eksiPuan
+      value: 
+      objectReference: {fileID: 8300000, guid: 4b4dd7245f6104c8c8eb07ccf6b386ed, type: 3}
+    - target: {fileID: 68029773, guid: 2c04d509d5b66fd45a0abf9cc3a3f316, type: 3}
       propertyPath: spawnBadPrefab
       value: 
       objectReference: {fileID: 8495754117300770802, guid: 33b89217a9618154d964a23be041e1f0, type: 3}
@@ -8497,6 +8505,10 @@ PrefabInstance:
       propertyPath: spawnSweetPrefab.Array.data[2]
       value: 
       objectReference: {fileID: 4146901205958286308, guid: b9c5e23976d7d5748bebf5b636aade86, type: 3}
+    - target: {fileID: 1599726319754265998, guid: 2c04d509d5b66fd45a0abf9cc3a3f316, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 033766cc31c97904bae4404b8a079544, type: 3}
     - target: {fileID: 7049643880385966574, guid: 2c04d509d5b66fd45a0abf9cc3a3f316, type: 3}
       propertyPath: m_RootOrder
       value: 6

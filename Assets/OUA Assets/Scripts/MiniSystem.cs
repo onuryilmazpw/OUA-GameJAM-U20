@@ -11,13 +11,20 @@ public class MiniSystem : MonoBehaviour
     public List<GameObject> spawnSweetPrefab;
     public GameObject spawnBadPrefab;
     public int targetPuan;
+    public AudioClip artiPuan;
+    public AudioClip eksiPuan;
+
+
 
     private int puan = 0;
     private int sweetIndex = 0;
+    private AudioSource aSource;
 
     private void Start()
     {
         puanYazi = GameObject.Find("Puan").GetComponent<TextMeshProUGUI>();
+        aSource = GetComponent<AudioSource>();
+        aSource.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -26,6 +33,7 @@ public class MiniSystem : MonoBehaviour
         {
             Destroy(other.gameObject);
             puan++;
+            aSource.PlayOneShot(artiPuan);
             SpawnSweet();
             puanYazi.text = "Puan : " + puan + "/" + targetPuan.ToString();
             if(puan >= targetPuan)
@@ -37,7 +45,8 @@ public class MiniSystem : MonoBehaviour
         {
             Destroy(other.gameObject);
             puan -= 2;
-            if(puan < 0)
+            aSource.PlayOneShot(eksiPuan);
+            if (puan < 0)
             {
                 puan = 0;
             }
