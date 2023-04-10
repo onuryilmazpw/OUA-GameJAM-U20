@@ -24,6 +24,7 @@ public class MiniSystem : MonoBehaviour
     {
         puanYazi = GameObject.Find("Puan").GetComponent<TextMeshProUGUI>();
         aSource = GetComponent<AudioSource>();
+        AudioManager.instance.StopSound("Education");
         aSource.Play();
     }
 

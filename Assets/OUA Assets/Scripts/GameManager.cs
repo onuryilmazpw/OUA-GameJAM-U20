@@ -55,11 +55,13 @@ public class GameManager : MonoBehaviour
     {
         //bu alttaki dört satýr oyunun deneme aþamasýnda, deðiþkenleri her seferinde sýfýrlamak için yapýlmýþtýr. Buil alýnýrken silinecektir
         //PlayerPrefs.SetInt("firstOpen", 0);
- 
+
         //SetInt("code", 1);
         //SetInt("draw", 1);
         //SetInt("pm", 1);
         //SetInt("whichLevel", 0);            //0. level aslýnda 1. level oluyor (Levellerde dizi mantýðý var)*/
+
+        AudioManager.instance.PlaySound("Education");
 
         endBtn.DOFade(0, 0);
         endBtn.GetComponent<RectTransform>().DOScale(0, 0);
