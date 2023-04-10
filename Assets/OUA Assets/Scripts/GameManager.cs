@@ -166,8 +166,8 @@ public class GameManager : MonoBehaviour
 
 
         codeTxt.text = "0/" + gv.levels[whichlevel].codeWorkVal + "   Yazýlým Ýþi";
-        drawTxt.text = "0/" + gv.levels[whichlevel].drawWorkVal + "   Sanat Tasarýmý Gücü";
-        pmTxt.text = "0/" + gv.levels[whichlevel].pmWorkVal + "   Proje Yönetimi Gücü";
+        drawTxt.text = "0/" + gv.levels[whichlevel].drawWorkVal + "   Sanat Tasarýmý iþi";
+        pmTxt.text = "0/" + gv.levels[whichlevel].pmWorkVal + "   Proje Yönetimi Ýþi";
     }
     void WorkValueStat(string whichBtn)
     {
@@ -202,7 +202,7 @@ public class GameManager : MonoBehaviour
         endBtn.GetComponent<RectTransform>().DOScale(1, 0);
 
         endTxt.color = Color.green;
-        endTxt.text = "Tebrikler!\nBu ay'ýn görevlerini baþarýyla bitirdin.";
+        endTxt.text = "Tebrikler!\nBu ayýn görevlerini baþarýyla bitirdin.";
 
         Invoke(nameof(ActiveBtn), 1);
         Invoke(nameof(GoEduScene), 2f);
