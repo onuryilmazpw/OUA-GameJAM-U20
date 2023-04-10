@@ -5251,6 +5251,10 @@ PrefabInstance:
       propertyPath: spawnSweetPrefab.Array.data[1]
       value: 
       objectReference: {fileID: 7732922478670923825, guid: 06df7fe331a6a1845bbde314cb75570a, type: 3}
+    - target: {fileID: 1599726319754265998, guid: 2c04d509d5b66fd45a0abf9cc3a3f316, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7049643880385966574, guid: 2c04d509d5b66fd45a0abf9cc3a3f316, type: 3}
       propertyPath: m_RootOrder
       value: 8

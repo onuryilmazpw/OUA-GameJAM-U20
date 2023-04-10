@@ -3380,50 +3380,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: AtkBtn1
-    clip: {fileID: 8300000, guid: 46397d52d53c1994a8e96aa949fed177, type: 3}
+    clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: AtkBtn2
-    clip: {fileID: 8300000, guid: dd799892128a3f74c856ec201bbd434f, type: 3}
+    clip: {fileID: 8300000, guid: d8d04c6f80a1140db85ede568dab1f51, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: NormalBtn
-    clip: {fileID: 8300000, guid: d88f13a3c0a38f84b9ee97e88abf06ff, type: 3}
+    clip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: WinGame
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 2667a0a008b044e218b63df62e2be749, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: LoseGame
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: b9eff218e132a4e76be78840eca96fb2, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: BadThings
-    clip: {fileID: 8300000, guid: c4c36d3a94531b8438fc28a8471112df, type: 3}
+    clip: {fileID: 8300000, guid: df729d213c4be44a9b55cd109f5cd4f9, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Fight
-    clip: {fileID: 8300000, guid: 8607be6a44ca64643a16cfe7112cd9df, type: 3}
+    clip: {fileID: 8300000, guid: fc5af015011ea3745b7f78ea1dd1049f, type: 3}
     volume: 0.2
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Education
-    clip: {fileID: 0}
-    volume: 1
+    clip: {fileID: 8300000, guid: 06906d718be5b6a4cb2df8732bf39832, type: 3}
+    volume: 0.2
     pitch: 1
     loop: 1
     source: {fileID: 0}
