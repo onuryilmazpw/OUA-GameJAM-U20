@@ -85,3 +85,4 @@ crashlytics-build.properties
 *.vsix
 .vscode/settings.json
 ProjectSettings/EditorBuildSettings.asset
+.vsconfig
