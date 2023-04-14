@@ -1,6 +1,18 @@
-# OUA-GameJAM-U20
-# AKADEMİ FIGHTER
- 
+# OUA-GameJAM-U20 - AKADEMİ FIGHTER
+
+Ekip 
+
+-Onur Yılmaz
+
+-Yunus Emre Kehribar
+
+-Begüm Odabaş
+
+-Alperen Turgut
+
+
+# 
+
 Hazır Kullanılan Assetler
 
 Ses assetleri
@@ -10,5 +22,3 @@ https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-5
 
 8Bit Music - 062022
 https://assetstore.unity.com/packages/audio/music/8bit-music-062022-225623
-
-Çizimleri kendimiz yaptık. Kodları kendimiz yazdık.
