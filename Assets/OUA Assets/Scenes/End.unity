@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 748, y: -70}
-  m_SizeDelta: {x: 2900.4673, y: 184.6518}
+  m_AnchoredPosition: {x: 41.922974, y: -11.363892}
+  m_SizeDelta: {x: 1488.313, y: 780.7859}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &495529500
 MonoBehaviour:
@@ -181,10 +181,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tebrikler, Akademiden Mezun Oldun!
+  m_text: "Tebrikler, Akademiden Mezun Oldun!\n\n\nEkip \r\n- Onur Y\u0131lmaz\r\n-Yunus
+    Emre Kehribar\r\n-Beg\xFCm Odaba\u015F\r\n-Alperen Turgut"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -215,8 +216,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

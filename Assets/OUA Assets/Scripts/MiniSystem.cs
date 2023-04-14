@@ -58,13 +58,13 @@ public class MiniSystem : MonoBehaviour
 
     private void SpawnSweet()
     {
-        Vector2 spawnPosition = new Vector2(Random.Range(-8.00f, 7.80f), Random.Range(-4.25f, 3.75f));
+        Vector2 spawnPosition = new Vector2(Random.Range(-7.50f, 7.50f), Random.Range(-4.00f, 3.50f));
         sweetIndex = Random.Range(0, spawnSweetPrefab.Count);
         Instantiate(spawnSweetPrefab[sweetIndex], spawnPosition, Quaternion.identity);
     }
     private void SpawnBad()
     {
-        Vector2 spawnPosition = new Vector2(Random.Range(-8.00f, 7.80f), Random.Range(-4.25f, 3.75f));
+        Vector2 spawnPosition = new Vector2(Random.Range(-7.50f, 7.50f), Random.Range(-4.00f, 3.50f));
         Instantiate(spawnBadPrefab, spawnPosition, Quaternion.identity);
     }
 

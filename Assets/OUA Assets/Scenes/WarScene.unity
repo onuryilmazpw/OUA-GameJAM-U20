@@ -242,8 +242,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 336.10748, y: 46.665}
-  m_SizeDelta: {x: 442.3188, y: 389.02}
+  m_AnchoredPosition: {x: 344.2403, y: 46.665}
+  m_SizeDelta: {x: 458.5843, y: 389.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &130777755
 MonoBehaviour:
@@ -323,8 +323,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "0/1   Sanat tasar\u0131m\u0131 \u0130\u015Fi"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -418,6 +418,141 @@ RectTransform:
   m_AnchoredPosition: {x: 254.5, y: -4}
   m_SizeDelta: {x: 479.6131, y: 47.6815}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &183034212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 183034213}
+  - component: {fileID: 183034215}
+  - component: {fileID: 183034214}
+  m_Layer: 5
+  m_Name: Akademi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &183034213
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183034212}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 753605681}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1.8945312, y: 357.65}
+  m_SizeDelta: {x: -768.4895, y: -1127.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &183034214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183034212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Akademi Fighter
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 176.23
+  m_fontSizeBase: 176.23
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 16
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &183034215
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183034212}
+  m_CullTransparentMesh: 1
 --- !u!1 &196043760
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12.136414, y: 23.058838}
+  m_AnchoredPosition: {x: 12.136475, y: 23.058838}
   m_SizeDelta: {x: -150.49048, y: -157.77234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &196043762
@@ -478,8 +613,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Kaybettin! \nYeteneklerini y\xFCkselt ve tekrar dene"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -588,7 +723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369488240
@@ -613,8 +748,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Y\xF6net"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -723,7 +858,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 11.5, y: 0}
+  m_AnchoredPosition: {x: 17, y: 2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &418079301
@@ -748,8 +883,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1. Seviye
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -858,7 +993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 45.5, y: 0}
+  m_AnchoredPosition: {x: 45.5, y: 2.8}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &429441823
@@ -883,8 +1018,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "1   Proje Y\xF6netimi G\xFCc\xFC"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1130,8 +1265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -12.136414, y: -23.058777}
-  m_SizeDelta: {x: 150.4905, y: 157.7723}
+  m_AnchoredPosition: {x: -16.456787, y: -27.641724}
+  m_SizeDelta: {x: 162.917, y: 172.3717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &484409605
 MonoBehaviour:
@@ -1652,8 +1787,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Oyunu s\u0131f\u0131rla"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2315,8 +2450,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "1   Sanat Tasar\u0131m\u0131 G\xFCc\xFC"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2422,6 +2557,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 183034213}
   - {fileID: 1440853456}
   - {fileID: 1188628798}
   m_Father: {fileID: 1633972105}
@@ -2429,8 +2565,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -15.793579, y: -65.7157}
-  m_SizeDelta: {x: 162.5632, y: 110.2838}
+  m_AnchoredPosition: {x: -15.793457, y: -29.392456}
+  m_SizeDelta: {x: 162.5632, y: 172.8981}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &753605682
 CanvasGroup:
@@ -2598,8 +2734,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Proje Y\xF6netimi \xD6\u011Fren"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2785,7 +2921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 45.5, y: 0}
+  m_AnchoredPosition: {x: 45.5, y: 1.9}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &805539490
@@ -2810,8 +2946,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "1   Yaz\u0131l\u0131m G\xFCc\xFC"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3054,7 +3190,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 20.066431, y: -1.1630859}
+  m_AnchoredPosition: {x: 20.066406, y: -1.1630859}
   m_SizeDelta: {x: 78.8975, y: 67.6231}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &884726681
@@ -3079,8 +3215,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "10  Kalan Tur Say\u0131s\u0131"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3850,8 +3986,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "1   Sanat Tasar\u0131m\u0131 G\xFCc\xFC"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3960,7 +4096,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.517517, y: 0}
+  m_AnchoredPosition: {x: -13.517578, y: 0}
   m_SizeDelta: {x: -303.00513, y: -53.38159}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132933399
@@ -3986,8 +4122,8 @@ MonoBehaviour:
   m_text: "K\xFC\xE7\xFCk bir bug olu\u015Ftu. Bu seni yava\u015Flatt\u0131 ama durdurmaya
     yetmez. \n\n- Yaz\u0131l\u0131m ilerlemen 1 azald\u0131.\r"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4092,12 +4228,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 753605681}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.793579, y: -338}
-  m_SizeDelta: {x: -1650.7605, y: -1124.0435}
+  m_AnchoredPosition: {x: 54, y: -342}
+  m_SizeDelta: {x: -1020.7214, y: -1186.0265}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188628799
 MonoBehaviour:
@@ -4121,8 +4257,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "*Ba\u015Flamak \u0130\xE7in Herhangi bir Yere T\u0131kla*"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4131,7 +4267,7 @@ MonoBehaviour:
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
-  m_colorMode: 3
+  m_colorMode: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
@@ -4146,8 +4282,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.1
-  m_fontSizeBase: 23.1
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4256,8 +4392,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xC7izim \xD6\u011Fren"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4628,8 +4764,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 4.9845, y: -60}
-  m_SizeDelta: {x: 463.5779, y: 78.828}
+  m_AnchoredPosition: {x: 17.9954, y: -60}
+  m_SizeDelta: {x: 489.5997, y: 78.828}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333643656
 MonoBehaviour:
@@ -4729,8 +4865,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Kodlama \xD6\u011Fren"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4864,8 +5000,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "G\xF6revler Sahnesi"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5051,7 +5187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 10}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421002020
@@ -5076,8 +5212,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Kodla
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5182,12 +5318,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 753605681}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.793579, y: 65.7157}
-  m_SizeDelta: {x: -733.1145, y: -413.96484}
+  m_AnchoredPosition: {x: -6.9125977, y: -14.820923}
+  m_SizeDelta: {x: -528.8506, y: -665.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1440853457
 MonoBehaviour:
@@ -5209,14 +5345,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Akademi Fighter\nMarcus'un hayali kendi oyununu yapmakt\u0131. Nas\u0131l
-    yap\u0131laca\u011F\u0131n\u0131 bilmiyordu.  Sonra Oyun ve Uygulama Akademisi
-    ile tan\u0131\u015Ft\u0131. Akademide e\u011Fitimler al\u0131p g\xF6revleri yerine
-    getirerek bu hayaline kavu\u015Fmaya \xE7al\u0131\u015Facak.\n(Ama \xE7\u0131kabilecek
-    aksilikleri d\xFC\u015F\xFCnmedi...)"
+  m_text: "Marcus'un hayali kendi oyununu yapmakt\u0131. Nas\u0131l yapabilece\u011Fini
+    bilmiyordu. Sonra Oyun ve Uygulama Akademisi ile tan\u0131\u015Ft\u0131. Akademide
+    e\u011Fitimler al\u0131p g\xF6revleri yerine getirerek bu hayaline kavu\u015Fmaya
+    \xE7al\u0131\u015Facak.\n\n(Ama \xE7\u0131kabilecek aksilikleri d\xFC\u015F\xFCnmedi...)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5224,8 +5359,8 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
+  m_enableVertexGradient: 1
+  m_colorMode: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
@@ -5247,7 +5382,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5328,7 +5463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 13.517517, y: 0}
+  m_AnchoredPosition: {x: 13.517578, y: 0}
   m_SizeDelta: {x: -302.1213, y: -354.3677}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442786494
@@ -5497,8 +5632,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "E\u011Fitim Sahnesi"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5745,7 +5880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1636927596
@@ -5770,8 +5905,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xC7iz"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6092,8 +6227,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10, y: -99}
-  m_SizeDelta: {x: 93.78491, y: 70.8985}
+  m_AnchoredPosition: {x: 1.8672485, y: -99}
+  m_SizeDelta: {x: 77.51953, y: 70.8985}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1855288646
 MonoBehaviour:
@@ -6270,8 +6405,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "0/2   Yaz\u0131l\u0131m \u0130\u015Fi"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6385,8 +6520,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "0/3   Proje Y\xF6netimi \u0130\u015Fi"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6515,7 +6650,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 45.5, y: 0}
+  m_AnchoredPosition: {x: 45.5, y: 2.3}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031681685
@@ -6540,8 +6675,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "1   Proje Y\xF6netimi G\xFCc\xFC"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6650,7 +6785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 259, y: -35}
+  m_AnchoredPosition: {x: 267, y: -35}
   m_SizeDelta: {x: 479.6131, y: 47.6815}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2071278540
@@ -6675,8 +6810,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Yap\u0131lmas\u0131 Gereken \u0130\u015Fler"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6931,7 +7066,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -64}
+  m_AnchoredPosition: {x: -8.1328125, y: -64}
   m_SizeDelta: {x: 195.6888, y: 56.4578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2121138468
@@ -7007,7 +7142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 45.5, y: 0}
+  m_AnchoredPosition: {x: 45.5, y: 4.2}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2134931584
@@ -7032,8 +7167,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "1   Yaz\u0131l\u0131m G\xFCc\xFC"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
+  m_sharedMaterial: {fileID: 6952964614842593678, guid: 738fd3a553ab1cd47a8c8f17ac0fe4aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
