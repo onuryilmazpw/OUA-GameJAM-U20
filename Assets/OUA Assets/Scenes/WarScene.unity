@@ -3407,7 +3407,7 @@ MonoBehaviour:
   endTxt: {fileID: 196043762}
   chancePanel: {fileID: 1442786497}
   chanceTxt: {fileID: 1132933399}
-  badChance: 6
+  badChance: 5
 --- !u!1 &945301871
 GameObject:
   m_ObjectHideFlags: 0

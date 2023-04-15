@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (whichlevel >= 5)
+        if (whichlevel > 5)
         {
             ResetGameEX();
             SceneManager.LoadScene("End");
