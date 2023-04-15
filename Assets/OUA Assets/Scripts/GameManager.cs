@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (whichlevel > 5)
+        if (whichlevel >= 5)
         {
             ResetGameEX();
             SceneManager.LoadScene("End");
@@ -138,10 +138,6 @@ public class GameManager : MonoBehaviour
     }
     public void GoEduScene()
     {
-        if (whichlevel >= 4)
-        {
-            SceneManager.LoadScene("End");
-        }
         AudioManager.instance.PlaySound("NormalBtn");
         AudioManager.instance.StopSound("Fight");
         AudioManager.instance.PlaySound("Education");
